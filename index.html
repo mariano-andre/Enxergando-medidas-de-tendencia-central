@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insira as informações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <label for="inTitulo">Título:</label>
+        <input type="text" id="inTitulo">
+
+        <label for="inTipoVariavel">Tipo da variável:</label>
+        <select id="inTipoVariavel">
+            <option value="qualitativa">Qualitativa</option>
+            <option value="quantitativa">Quantitativa</option>
+        </select>
+        <table>
+            <tr>
+                <td><input type="text" placeholder="Dado coletado"  class="table-title" id="inDadoColetado"></td>
+                <td class="table-title">qtd</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="tdInfo"></td>
+                <td><input type="number" class="tdQtd"></td>
+            </tr>
+            <tr id="trButton">
+                <td colspan="2"><input type="button" id="btAddRow" value="+"></td>
+            </tr>
+        </table>
+        <input type="button" value="Mostrar" id="btMostrar">
+    </div>
+
+    <div id="exemplos">
+        <input type="button" value="Andrés" id="btAndres">
+    </div>
+
+    <div id="grafico">
+        <div class="opcoes-grafico">
+            <input type="button" value="Coluna" class="chartType column">
+            <input type="button" value="Linha" class="chartType line">
+            <input type="button" value="Área" class="chartType area">
+            <input type="button" value="Pizza" class="chartType pie">
+        </div>
+        <div id="chartContainer"></div>
+    </div>
+
+
+    <script src="addRow.js"></script>
+    <script src="index.js"></script>
+    <script src="exemplos.js"></script>
+</body>
+</html>

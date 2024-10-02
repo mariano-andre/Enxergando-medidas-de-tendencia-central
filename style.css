@@ -1,0 +1,38 @@
+
+table{
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, td{
+    border: 1px solid black;
+}
+
+.table-title{
+    font-size: 20px;
+}
+
+td{
+    padding: 5px 20px;
+    text-align: center;
+}
+
+input{
+    width: 200px;
+}
+
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid rgb(143, 143, 143);
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 4px 2px -2px rgb(143, 143, 143);
+}
+input[type="button"]:focus{
+    box-shadow: none;
+}
+
+.canvasjs-chart-canvas{
+    margin-top: 50px;
+}
